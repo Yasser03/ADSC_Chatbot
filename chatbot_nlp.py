@@ -34,7 +34,7 @@ responses = {
     'thanks': 'You\'re welcome!',
     'events': f'The upcoming events are: {", ".join(events.keys())}.',
     'event_info': lambda event: f'The date and location of {event} are {events[event]["date"].strftime("%Y-%m-%d")} at {events[event]["location"]}.',
-    'unknown': 'Sorry, I didn\'t understand that. Please contact us at help@adsc.gov.ae or call +971 2 4088999 for more information.'
+    'unknown': 'Sorry, I didn\'t understand that. Please contact us at info@adsc.gov.ae or call +971 2 4088999 for more information.'
 }
 
 # Define the Streamlit app
