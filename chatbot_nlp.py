@@ -1,17 +1,17 @@
 import streamlit as st
-import nltk
-nltk.download('punkt')  # download the necessary tokenizer data
-from nltk.tokenize import word_tokenize
+# import nltk
+# nltk.download('punkt')  # download the necessary tokenizer data
+# from nltk.tokenize import word_tokenize
 from datetime import datetime
 
 # Define a function to check if a message contains a certain word
 def check_for_word(message, word):
-    tokens = word_tokenize(message.lower())
+    tokens = message.lower()
     return word.lower() in tokens
 
 # Define a function to get the date from a message
 def get_date(message):
-    tokens = word_tokenize(message.lower())
+    tokens = message.lower()
     for i in range(len(tokens)):
         try:
             date = datetime.strptime(tokens[i], '%Y-%m-%d').date()
